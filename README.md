@@ -1,12 +1,12 @@
-# TexFlow
+# AcaTex
 
 > **Write visually. Typeset with LaTeX.**
 
-**TexFlow is a visual, structured academic writing environment powered by LaTeX.**
+**AcaTex is a visual, structured academic writing environment powered by LaTeX.**
 
 Write your paper like you would in a modern word processor. Add equations, citations, figures, tables, footnotes, and document structure visually.
 
-TexFlow handles the LaTeX underneath.
+AcaTex handles the LaTeX underneath.
 
 No `\section{}`.  
 No `\begin{figure}`.  
@@ -18,10 +18,10 @@ No fighting with BibTeX just to cite a paper.
 
 ---
 
-## See TexFlow in Action
+## See AcaTex in Action
 
 <p align="center">
-  <img src="assets/texflow-demo.gif" width="100%" alt="TexFlow Demo">
+  <img src="assets/acatex-demo.gif" width="100%" alt="AcaTex Demo">
 </p>
 
 <p align="center">
@@ -30,7 +30,7 @@ No fighting with BibTeX just to cite a paper.
 
 ---
 
-## Why TexFlow?
+## Why AcaTex?
 
 LaTeX is great at typesetting.
 
@@ -50,7 +50,7 @@ P(D)=(1-p)[q_N+(q_L-q_N)\pi_L]
 As argued by \textcite{fearon1995}...
 ```
 
-TexFlow lets you work with what those commands actually **mean**:
+AcaTex lets you work with what those commands actually **mean**:
 
 ```text
 Theory
@@ -62,7 +62,13 @@ Equation 1
 Fearon (1995)
 ```
 
-Underneath, TexFlow still generates and compiles LaTeX.
+For example, instead of manually creating an equation environment, you can insert an equation visually:
+
+$$
+P(D)=(1-p)\left[q_N+(q_L-q_N)\pi_L\right]
+$$
+
+Underneath, AcaTex still generates and compiles LaTeX.
 
 You get the typesetting system without having to make the typesetting language your writing interface.
 
@@ -70,7 +76,7 @@ You get the typesetting system without having to make the typesetting language y
 
 # Built for Academic Writing
 
-TexFlow treats a paper as more than a page full of formatted text.
+AcaTex treats a paper as more than a page full of formatted text.
 
 A paper has structure.
 
@@ -95,7 +101,7 @@ Paper
 └── Conclusion
 ```
 
-TexFlow makes that structure visible and directly editable.
+AcaTex makes that structure visible and directly editable.
 
 Move a section, and its numbering follows.
 
@@ -103,7 +109,7 @@ Move a paragraph, equation, figure, or table, and the document structure follows
 
 The idea is simple:
 
-> **You decide what something is. TexFlow handles how it should be typeset.**
+> **You decide what something is. AcaTex handles how it should be typeset.**
 
 ---
 
@@ -113,7 +119,7 @@ The idea is simple:
 
 Write in a familiar visual editor instead of editing LaTeX source.
 
-TexFlow supports:
+AcaTex supports:
 
 - Rich text editing
 - Document titles
@@ -134,7 +140,7 @@ The editor is designed for writing rather than programming.
 
 Long papers should not require endless scrolling.
 
-TexFlow's **Document Map** gives you a structural view of your paper:
+AcaTex's **Document Map** gives you a structural view of your paper:
 
 ```text
 1 Introduction
@@ -174,13 +180,31 @@ Insert and edit mathematical equations visually while keeping LaTeX-quality math
 
 For example:
 
+$$
+\Pr(D)
+=
+(1-p)
+\left[
+q_N+
+(q_L-q_N)
+\frac{\rho_N}
+{1-\rho_L+\rho_N}
+\right]
+$$
+
+AcaTex lets you work with mathematical content as part of the visual document.
+
+You do not need to manually create:
+
 ```latex
-P(D)=(1-p)[q_N+(q_L-q_N)\pi_L]
+\begin{equation}
+...
+\end{equation}
 ```
 
-can be inserted as a mathematical object without requiring the rest of the document to be written as LaTeX source.
+just to add a mathematical expression to your paper.
 
-TexFlow supports mathematical writing while leaving the final typesetting to LaTeX.
+LaTeX remains responsible for the final mathematical typesetting.
 
 ---
 
@@ -188,7 +212,7 @@ TexFlow supports mathematical writing while leaving the final typesetting to LaT
 
 Academic citations should feel like part of writing — not a programming task.
 
-TexFlow lets you:
+AcaTex lets you:
 
 - Paste BibTeX
 - Import `.bib` files
@@ -210,7 +234,7 @@ you work with:
 Wendt (1992)
 ```
 
-TexFlow handles the citation key, BibTeX data, bibliography processing, and LaTeX commands underneath.
+AcaTex handles the citation key, BibTeX data, bibliography processing, and LaTeX commands underneath.
 
 ### Citation Styles
 
@@ -231,7 +255,7 @@ Figures and tables are treated as academic document objects rather than just thi
 
 ### Figures
 
-Add:
+Add and manage:
 
 - Local images
 - Captions
@@ -242,7 +266,7 @@ Add:
 
 ### Tables
 
-TexFlow supports different table workflows, including:
+AcaTex supports different table workflows, including:
 
 - Academic LaTeX-style tables
 - Grid-style tables
@@ -251,7 +275,17 @@ TexFlow supports different table workflows, including:
 - Row and column editing
 - Alignment
 
-TexFlow translates these visual objects into the corresponding LaTeX structure.
+AcaTex translates these visual objects into the corresponding LaTeX structure.
+
+---
+
+## Footnotes
+
+Footnotes are part of the document structure rather than manually typed superscript numbers.
+
+AcaTex manages footnote numbering and passes the final structure to LaTeX for typesetting.
+
+This means the document can be reorganized without requiring footnote numbers to be manually rewritten.
 
 ---
 
@@ -283,13 +317,13 @@ The PDF shows what the final paper actually looks like.
 
 ## LaTeX Underneath
 
-TexFlow does not replace LaTeX with a simplified typesetting engine.
+AcaTex does not replace LaTeX with a simplified typesetting engine.
 
 It uses LaTeX as the typesetting foundation.
 
 The difference is the interface.
 
-Traditional workflow:
+### Traditional workflow
 
 ```text
 Writer
@@ -301,7 +335,7 @@ TeX Engine
 PDF
 ```
 
-TexFlow:
+### AcaTex
 
 ```text
 Writer
@@ -319,13 +353,13 @@ PDF
 
 LaTeX remains available as an export format.
 
-You are not locked into TexFlow.
+You are not locked into AcaTex.
 
 ---
 
 ## Chinese & English Academic Writing
 
-TexFlow is designed for multilingual academic writing.
+AcaTex is designed for multilingual academic writing.
 
 Current support includes:
 
@@ -335,6 +369,7 @@ Current support includes:
 - Unicode text
 - Mathematical content in multilingual documents
 - Open-source Chinese and English fonts
+- System fonts
 - User-imported fonts
 
 For example:
@@ -347,14 +382,21 @@ and:
 
 can exist in the same academic workflow.
 
+Mathematical expressions remain available in multilingual documents:
+
+$$
+\pi_L=\frac{\rho_N}{1-\rho_L+\rho_N}
+$$
+
 ---
 
 ## Fonts & Appearance
 
-TexFlow includes a selection of academic-friendly English and Chinese fonts.
+AcaTex includes a selection of academic-friendly English and Chinese fonts.
 
 It also supports:
 
+- Open-source fonts
 - System fonts
 - Custom font import
 - Light mode
@@ -371,7 +413,7 @@ The Eye Comfort writing mode uses a subtle warm-paper background while leaving t
 
 Your paper should not stop working because your Wi-Fi does.
 
-Core TexFlow workflows run locally:
+Core AcaTex workflows run locally:
 
 - Writing
 - Saving
@@ -380,16 +422,17 @@ Core TexFlow workflows run locally:
 - Reference management
 - PDF generation
 - Figures and tables
+- Document structure management
 
 Tectonic and the required writing infrastructure are integrated into the desktop application.
 
-No browser-based writing environment is required.
+No browser-based writing environment is required for the core writing workflow.
 
 ---
 
 # Templates
 
-TexFlow supports academic document templates so that **content and typesetting can remain separate**.
+AcaTex supports academic document templates so that **content and typesetting can remain separate**.
 
 The idea is:
 
@@ -415,7 +458,7 @@ Custom LaTeX template compatibility is still being expanded during the Public Pr
 
 ## macOS
 
-The current TexFlow Public Preview supports:
+The current AcaTex Public Preview supports:
 
 - **macOS**
 - **Apple Silicon**
@@ -424,18 +467,18 @@ Download the latest `.dmg` from the **Releases** section of this repository.
 
 ### Installation
 
-1. Download the latest TexFlow `.dmg`
+1. Download the latest AcaTex `.dmg`
 2. Open the disk image
-3. Drag TexFlow into Applications
-4. Launch TexFlow
+3. Drag AcaTex into Applications
+4. Launch AcaTex
 
 Support for additional platforms is planned for future releases.
 
 ---
 
-# What TexFlow Is — and Isn't
+# What AcaTex Is — and Isn't
 
-TexFlow is **not**:
+AcaTex is **not**:
 
 - A replacement for every possible LaTeX workflow
 - A visual parser for every LaTeX package ever created
@@ -443,7 +486,7 @@ TexFlow is **not**:
 - A freeform desktop-publishing application
 - An attempt to reproduce every feature of Microsoft Word
 
-TexFlow **is** an attempt to make the most common academic writing workflow dramatically easier.
+AcaTex **is** an attempt to make the most common academic writing workflow dramatically easier.
 
 The focus is on:
 
@@ -451,6 +494,7 @@ The focus is on:
 - Academic structure
 - Equations
 - Citations
+- Footnotes
 - Figures
 - Tables
 - References
@@ -465,7 +509,7 @@ You can still export your work to LaTeX.
 
 # Public Preview
 
-TexFlow is under active development.
+AcaTex is under active development.
 
 This is an early public release.
 
@@ -473,7 +517,7 @@ Some features may change.
 
 Some workflows may still contain bugs.
 
-Some LaTeX documents may contain structures that TexFlow does not yet understand.
+Some LaTeX documents may contain structures that AcaTex does not yet understand.
 
 That's why this is a **Public Preview**.
 
@@ -484,7 +528,7 @@ Useful bug reports include:
 - What you were trying to do
 - What happened
 - What you expected
-- Your TexFlow version
+- Your AcaTex version
 - A screenshot or minimal example
 
 Real-world academic documents are especially useful for improving compatibility.
@@ -497,13 +541,53 @@ Real-world academic documents are especially useful for improving compatibility.
 
 Planned areas include:
 
-- More advanced visual layouts
-- Improved custom LaTeX template compatibility
-- Better Document Map ↔ editor navigation
-- Cross-references
+### Advanced Visual Layouts
+
+Support for more complex structured layouts, including layouts such as:
+
+```text
+┌───────────┬───────────┐
+│    50%    │    50%    │
+└───────────┴───────────┘
+```
+
+and:
+
+```text
+┌────────────────┬──────┐
+│      70%       │ 30%  │
+└────────────────┴──────┘
+```
+
+without turning AcaTex into a freeform desktop-publishing tool.
+
+### Improved Template Compatibility
+
+Better support for custom LaTeX templates, document classes, and style files.
+
+### Better Document Navigation
+
+Improved synchronization between Document Map and the visual editor, including more precise navigation to sections and academic objects.
+
+### Cross-References
+
+Visual references to:
+
+- Sections
+- Equations
+- Figures
+- Tables
+
+without requiring users to manually manage `\label{}` and `\ref{}`.
+
+### Continued Improvements
+
 - More complex academic document structures
-- Continued stability improvements
-- Performance optimization
+- Stability
+- Performance
+- Import/export compatibility
+
+---
 
 ## Future
 
@@ -518,7 +602,7 @@ Possible future directions include:
 
 The roadmap is intentionally flexible.
 
-TexFlow will evolve based on real-world use and user feedback rather than feature count alone.
+AcaTex will evolve based on real-world use and user feedback rather than feature count alone.
 
 ---
 
@@ -528,7 +612,7 @@ Found a bug?
 
 Have a strange `.tex` file?
 
-Want TexFlow to support a particular academic workflow?
+Want AcaTex to support a particular academic workflow?
 
 Have an idea that would make academic writing less painful?
 
@@ -542,23 +626,23 @@ Bug reports, compatibility reports, and feature suggestions are welcome.
 
 This repository currently hosts:
 
-- TexFlow releases
+- AcaTex releases
 - Documentation
 - Issue tracking
 - Feature requests
 - Community feedback
 
-The TexFlow desktop application's core source code is currently **proprietary and is not included in this repository**.
+The AcaTex desktop application's core source code is currently **proprietary and is not included in this repository**.
 
 ---
 
-# The Idea Behind TexFlow
+# The Idea Behind AcaTex
 
 LaTeX solved an important problem:
 
 > **Authors should describe the structure of a document instead of manually typesetting every page.**
 
-TexFlow asks one more question:
+AcaTex asks one more question:
 
 > **What if authors didn't have to describe that structure in code?**
 
@@ -572,7 +656,7 @@ That's the experiment.
 
 > **可视化写作，使用 LaTeX 排版。**
 
-**TexFlow 是一款由 LaTeX 驱动的可视化结构化学术写作工具。**
+**AcaTex 是一款由 LaTeX 驱动的可视化结构化学术写作工具。**
 
 你可以像使用现代文字处理软件一样完成论文写作，通过可视化方式处理：
 
@@ -586,7 +670,7 @@ That's the experiment.
 - 文档结构
 - 字体与格式
 
-而 LaTeX 代码生成、Tectonic 编译、参考文献处理以及 PDF 排版由 TexFlow 在后台完成。
+而 LaTeX 代码生成、Tectonic 编译、参考文献处理以及 PDF 排版由 AcaTex 在后台完成。
 
 不需要先学会：
 
@@ -601,11 +685,11 @@ That's the experiment.
 
 再开始写论文。
 
-> **你负责论文写什么，TexFlow 负责它怎么排。**
+> **你负责论文写什么，AcaTex 负责它怎么排。**
 
 ---
 
-## 为什么做 TexFlow？
+## 为什么做 AcaTex？
 
 LaTeX 的问题并不是排版能力不够。
 
@@ -613,9 +697,9 @@ LaTeX 的问题并不是排版能力不够。
 
 问题在于，很多用户只是想写一篇论文，却需要同时理解命令、环境、宏包、BibTeX、编译流程以及各种排版规则。
 
-TexFlow 希望保留 LaTeX 的优势，同时改变它的交互方式。
+AcaTex 希望保留 LaTeX 的优势，同时改变它的交互方式。
 
-传统 LaTeX：
+### 传统 LaTeX
 
 ```text
 作者
@@ -627,7 +711,7 @@ TeX
 PDF
 ```
 
-TexFlow：
+### AcaTex
 
 ```text
 作者
@@ -651,7 +735,7 @@ LaTeX 仍然存在。
 
 ## Document Map
 
-TexFlow 不仅把论文看作一串文字，而是一个具有结构的学术文档。
+AcaTex 不仅把论文看作一串文字，而是一个具有结构的学术文档。
 
 ```text
 论文
@@ -687,9 +771,15 @@ TexFlow 不仅把论文看作一串文字，而是一个具有结构的学术文
 
 ---
 
-## 公式
+## 数学公式
 
 通过可视化方式插入和编辑数学公式，同时使用 LaTeX 完成最终数学排版。
+
+例如：
+
+$$
+P(D)=(1-p)\left[q_N+(q_L-q_N)\pi_L\right]
+$$
 
 无需为了插入一个公式而把整篇论文变成代码编辑体验。
 
@@ -697,7 +787,7 @@ TexFlow 不仅把论文看作一串文字，而是一个具有结构的学术文
 
 ## Citation 与参考文献
 
-TexFlow 希望把 Citation 重新变成写作的一部分。
+AcaTex 希望把 Citation 重新变成写作的一部分。
 
 你可以：
 
@@ -707,6 +797,7 @@ TexFlow 希望把 Citation 重新变成写作的一部分。
 - 本地管理文献
 - 可视化插入 Citation
 - 编辑和删除 Citation
+- 自动生成参考文献
 
 用户看到的是：
 
@@ -727,31 +818,53 @@ Wendt (1992)
 - APA 7
 - MLA 9
 
-底层 BibTeX、biblatex 与参考文献编译流程由 TexFlow 处理。
+底层 BibTeX、biblatex 与参考文献编译流程由 AcaTex 处理。
 
 ---
 
 ## 图片与表格
 
-TexFlow 将图片和表格作为学术文档对象进行处理。
+AcaTex 将图片和表格作为学术文档对象进行处理。
 
 支持：
 
 - Caption
 - Label
 - 图片大小与对齐
-- 学术风格表格
-- Grid 表格
+- Academic Table
+- Grid Table
 - 行列编辑
 - 文档结构导航
 
-这些内容最终由 TexFlow 转换为对应的 LaTeX 结构。
+这些内容最终由 AcaTex 转换为对应的 LaTeX 结构。
+
+---
+
+## 实时 PDF 预览
+
+可视化编辑器用于写作，PDF 用于展示最终排版。
+
+```text
+可视化编辑
+    ↓
+结构化文档
+    ↓
+LaTeX
+    ↓
+Tectonic
+    ↓
+PDF
+```
+
+二者是同一份学术文档的两种视图：
+
+> **一个服务于写作，一个服务于排版。**
 
 ---
 
 ## 中英文写作
 
-TexFlow 支持：
+AcaTex 支持：
 
 - 英文学术文档
 - 简体中文学术文档
@@ -759,103 +872,13 @@ TexFlow 支持：
 - Unicode 文本
 - 数学公式
 - 中英文字体
+- 系统字体
 - 自定义字体导入
 
-因此可以用于英文论文、中文论文、Research Note、课程作业、毕业论文以及中英文混排的学术文档。
+例如：
 
----
+> International institutions may alter states' strategic incentives.
 
-## 本地优先
+以及：
 
-TexFlow 的核心写作流程以本地使用为基础。
-
-以下功能均可在本地完成：
-
-- 文档写作
-- 保存
-- LaTeX 编译
-- Citation 与参考文献处理
-- PDF 生成
-- 图片与表格
-- 文档结构管理
-
-你的论文不应该因为没有网络而无法继续写。
-
----
-
-## 模板
-
-TexFlow 希望将：
-
-> **论文内容**
-
-和：
-
-> **论文应该如何排版**
-
-分开。
-
-同一份论文未来可以通过不同模板生成不同的最终排版，而无需重新修改论文内容。
-
-当前版本已经具备模板能力，自定义 LaTeX 模板兼容性仍在持续完善。
-
----
-
-## 下载
-
-当前 Public Preview 支持：
-
-**macOS · Apple Silicon**
-
-请前往本仓库的 **Releases** 下载最新 `.dmg`。
-
-安装方式：
-
-1. 下载 TexFlow `.dmg`
-2. 打开
-3. 将 TexFlow 拖入 Applications
-4. 启动 TexFlow
-
-未来计划支持更多平台。
-
----
-
-## 当前状态
-
-TexFlow 目前仍处于 **Public Preview**。
-
-核心学术写作与排版流程已经可以使用，但复杂 LaTeX 宏包、自定义命令、特殊模板以及部分边缘场景仍可能存在兼容性问题。
-
-如果遇到 Bug 或兼容性问题，欢迎提交 Issue。
-
-尤其欢迎真实论文、模板和特殊使用场景的反馈。
-
----
-
-## 关于源代码
-
-本仓库目前用于：
-
-- TexFlow 版本发布
-- 文档
-- Issue 追踪
-- 功能建议
-- 用户反馈
-
-TexFlow 桌面应用核心代码目前暂未公开。
-
----
-
-## TexFlow 的想法
-
-LaTeX 的一个重要思想是：
-
-> **作者应该描述文档的结构，而不是手工调整每一页的排版。**
-
-TexFlow 想再往前一步：
-
-> **如果作者连描述这些结构的代码都不需要写呢？**
-
-这就是 TexFlow 正在尝试的事情。
-
-**可视化写作，使用 LaTeX 排版。**
+> 国际制度可能
