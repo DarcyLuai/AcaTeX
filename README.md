@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/acatex-icon.png" width="128" alt="AcaTex Logo">
+  <img src="acatex-icon.png" width="128" alt="AcaTex Logo">
 </p>
 
 <h1 align="center">AcaTex</h1>
