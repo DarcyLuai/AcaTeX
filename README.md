@@ -1,20 +1,20 @@
-# AcaTex
+<p align="center">
+  <img src="assets/acatex-icon.png" width="128" alt="AcaTex Logo">
+</p>
 
-> **Write visually. Typeset with LaTeX.**
+<h1 align="center">AcaTex</h1>
 
-**AcaTex is a visual, structured academic writing environment powered by LaTeX.**
+<p align="center">
+  <strong>Write visually. Typeset with LaTeX.</strong>
+</p>
 
-Write your paper like you would in a modern word processor. Add equations, citations, figures, tables, footnotes, and document structure visually.
+<p align="center">
+  A visual, structured academic writing environment powered by LaTeX.
+</p>
 
-AcaTex handles the LaTeX underneath.
-
-No `\section{}`.  
-No `\begin{figure}`.  
-No fighting with BibTeX just to cite a paper.
-
-**Just write.**
-
-> **Public Preview · macOS · Apple Silicon**
+<p align="center">
+  <strong>Public Preview · macOS · Apple Silicon</strong>
+</p>
 
 ---
 
@@ -25,7 +25,7 @@ No fighting with BibTeX just to cite a paper.
 </p>
 
 <p align="center">
-  <b>Visual writing on the left. LaTeX-quality PDF on the right.</b>
+  <strong>Visual writing on the left. LaTeX-quality PDF on the right.</strong>
 </p>
 
 ---
@@ -62,15 +62,17 @@ Equation 1
 Fearon (1995)
 ```
 
-For example, instead of manually creating an equation environment, you can insert an equation visually:
+Instead of manually creating an equation environment, you can insert the equation visually:
 
-$$
+```math
 P(D)=(1-p)\left[q_N+(q_L-q_N)\pi_L\right]
-$$
+```
 
 Underneath, AcaTex still generates and compiles LaTeX.
 
 You get the typesetting system without having to make the typesetting language your writing interface.
+
+> **You focus on the paper. AcaTex handles the typesetting.**
 
 ---
 
@@ -132,7 +134,7 @@ AcaTex supports:
 - Undo and redo
 - Local document saving
 
-The editor is designed for writing rather than programming.
+The editor is designed for **writing rather than programming**.
 
 ---
 
@@ -144,11 +146,11 @@ AcaTex's **Document Map** gives you a structural view of your paper:
 
 ```text
 1 Introduction
-   Research question
+   Research Question
    Wendt (1992)
 
 2 Theory
-   Bargaining framework
+   Bargaining Framework
    Equation 1
 
 3 Data
@@ -170,7 +172,7 @@ Use it to:
 - Drag content between sections
 - Rename document elements
 
-Instead of treating your paper as a continuous stream of pages, Document Map treats it as a structured academic document.
+Instead of treating your paper as a continuous stream of pages, Document Map treats it as a **structured academic document**.
 
 ---
 
@@ -180,7 +182,7 @@ Insert and edit mathematical equations visually while keeping LaTeX-quality math
 
 For example:
 
-$$
+```math
 \Pr(D)
 =
 (1-p)
@@ -190,7 +192,7 @@ q_N+
 \frac{\rho_N}
 {1-\rho_L+\rho_N}
 \right]
-$$
+```
 
 AcaTex lets you work with mathematical content as part of the visual document.
 
@@ -285,7 +287,7 @@ Footnotes are part of the document structure rather than manually typed superscr
 
 AcaTex manages footnote numbering and passes the final structure to LaTeX for typesetting.
 
-This means the document can be reorganized without requiring footnote numbers to be manually rewritten.
+Reorganize the paper, insert another footnote, or delete one — numbering follows the document.
 
 ---
 
@@ -353,7 +355,7 @@ PDF
 
 LaTeX remains available as an export format.
 
-You are not locked into AcaTex.
+**You are not locked into AcaTex.**
 
 ---
 
@@ -384,9 +386,9 @@ can exist in the same academic workflow.
 
 Mathematical expressions remain available in multilingual documents:
 
-$$
+```math
 \pi_L=\frac{\rho_N}{1-\rho_L+\rho_N}
-$$
+```
 
 ---
 
@@ -469,7 +471,7 @@ Download the latest `.dmg` from the **Releases** section of this repository.
 
 1. Download the latest AcaTex `.dmg`
 2. Open the disk image
-3. Drag AcaTex into Applications
+3. Drag AcaTex into `Applications`
 4. Launch AcaTex
 
 Support for additional platforms is planned for future releases.
@@ -513,10 +515,8 @@ AcaTex is under active development.
 
 This is an early public release.
 
-Some features may change.
-
-Some workflows may still contain bugs.
-
+Some features may change.  
+Some workflows may still contain bugs.  
 Some LaTeX documents may contain structures that AcaTex does not yet understand.
 
 That's why this is a **Public Preview**.
@@ -539,11 +539,13 @@ Real-world academic documents are especially useful for improving compatibility.
 
 ## v0.2 — Structure & Layout
 
-Planned areas include:
+The next stage of AcaTex focuses on making structured academic documents more powerful without turning the editor into a desktop-publishing application.
 
 ### Advanced Visual Layouts
 
-Support for more complex structured layouts, including layouts such as:
+Support for more complex structured layouts, including:
+
+**50 / 50**
 
 ```text
 ┌───────────┬───────────┐
@@ -551,7 +553,7 @@ Support for more complex structured layouts, including layouts such as:
 └───────────┴───────────┘
 ```
 
-and:
+**70 / 30**
 
 ```text
 ┌────────────────┬──────┐
@@ -559,15 +561,25 @@ and:
 └────────────────┴──────┘
 ```
 
-without turning AcaTex into a freeform desktop-publishing tool.
+The goal is structured layout — not arbitrary x/y positioning.
 
 ### Improved Template Compatibility
 
-Better support for custom LaTeX templates, document classes, and style files.
+Better support for custom:
+
+- `.tex`
+- `.cls`
+- `.sty`
+
+files and academic templates.
+
+AcaTex will continue developing a compatibility layer for common LaTeX document structures while preserving unsupported advanced LaTeX where practical.
 
 ### Better Document Navigation
 
-Improved synchronization between Document Map and the visual editor, including more precise navigation to sections and academic objects.
+Improved synchronization between **Document Map** and the visual editor.
+
+Click a section, citation, equation, figure, or table and navigate directly to the corresponding document object.
 
 ### Cross-References
 
@@ -578,14 +590,21 @@ Visual references to:
 - Figures
 - Tables
 
-without requiring users to manually manage `\label{}` and `\ref{}`.
+without requiring users to manually manage:
+
+```latex
+\label{}
+\ref{}
+```
 
 ### Continued Improvements
 
 - More complex academic document structures
+- Citation workflows
 - Stability
 - Performance
 - Import/export compatibility
+- Editor ↔ PDF synchronization
 
 ---
 
@@ -602,7 +621,7 @@ Possible future directions include:
 
 The roadmap is intentionally flexible.
 
-AcaTex will evolve based on real-world use and user feedback rather than feature count alone.
+AcaTex will evolve based on **real-world use and user feedback rather than feature count alone**.
 
 ---
 
@@ -695,7 +714,15 @@ LaTeX 的问题并不是排版能力不够。
 
 恰恰相反，它的排版能力非常强。
 
-问题在于，很多用户只是想写一篇论文，却需要同时理解命令、环境、宏包、BibTeX、编译流程以及各种排版规则。
+问题在于，很多用户只是想写一篇论文，却需要同时理解：
+
+- 命令
+- 环境
+- 宏包
+- BibTeX
+- Citation key
+- 编译流程
+- 各种排版规则
 
 AcaTex 希望保留 LaTeX 的优势，同时改变它的交互方式。
 
@@ -777,9 +804,9 @@ AcaTex 不仅把论文看作一串文字，而是一个具有结构的学术文�
 
 例如：
 
-$$
+```math
 P(D)=(1-p)\left[q_N+(q_L-q_N)\pi_L\right]
-$$
+```
 
 无需为了插入一个公式而把整篇论文变成代码编辑体验。
 
@@ -881,4 +908,4 @@ AcaTex 支持：
 
 以及：
 
-> 国际制度可能
+> 国际制度可能改变国家的战略激励
