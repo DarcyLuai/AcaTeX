@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="AcaTex is a visual, structured academic writing environment powered by LaTeX." />
+    <meta name="theme-color" content="#f6f4ef" />
+    <title>AcaTex — Write visually. Typeset with LaTeX.</title>
+    <link rel="icon" href="assets/acatex-icon.png" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <nav class="nav shell" aria-label="Main navigation">
+        <a class="brand" href="#top" aria-label="AcaTex home">
+          <img src="assets/acatex-icon.png" alt="" width="32" height="32" />
+          <span>AcaTex</span>
+        </a>
+        <div class="nav-actions">
+          <a class="github-link" href="https://github.com/DarcyLuai/AcaTeX" target="_blank" rel="noreferrer" data-i18n="nav.github">GitHub</a>
+          <div class="language-switch" role="group" aria-label="Language">
+            <button class="lang-button is-active" type="button" data-lang="en" aria-pressed="true">EN</button>
+            <span aria-hidden="true">/</span>
+            <button class="lang-button" type="button" data-lang="zh" aria-pressed="false">中文</button>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="hero shell" id="top">
+        <div class="hero-copy">
+          <img class="hero-icon" src="assets/acatex-icon.png" alt="AcaTex app icon" width="104" height="104" />
+          <h1>AcaTex</h1>
+          <p class="slogan" data-i18n="hero.slogan">Write visually. Typeset with LaTeX.</p>
+          <p class="hero-description" data-i18n="hero.description">A visual, structured academic writing environment powered by LaTeX.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="https://github.com/DarcyLuai/AcaTeX/releases/latest" target="_blank" rel="noreferrer">
+              <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M18.7 13.1c0-3.2 2.6-4.8 2.7-4.9a5.8 5.8 0 0 0-4.6-2.5c-2-.2-3.8 1.2-4.8 1.2-1 0-2.5-1.2-4.2-1.1a6.2 6.2 0 0 0-5.2 3.1c-2.2 3.8-.6 9.5 1.6 12.6 1 1.5 2.3 3.2 3.9 3.1 1.6-.1 2.2-1 4.1-1s2.5 1 4.2 1c1.7 0 2.8-1.5 3.8-3 1.2-1.8 1.7-3.5 1.7-3.6-.1 0-3.2-1.2-3.2-4.9ZM15.5 3.7A5.5 5.5 0 0 0 16.8 0a5.4 5.4 0 0 0-3.5 1.8A5.2 5.2 0 0 0 12 5.4a4.5 4.5 0 0 0 3.5-1.7Z"/></svg>
+              <span data-i18n="hero.download">Download for macOS</span>
+            </a>
+            <a class="button button-secondary" href="https://github.com/DarcyLuai/AcaTeX" target="_blank" rel="noreferrer" data-i18n="hero.github">View on GitHub</a>
+          </div>
+          <p class="release-note" data-i18n="hero.release">Public Preview v0.2 · macOS · Apple Silicon</p>
+        </div>
+
+        <figure class="product-window reveal">
+          <div class="window-bar" aria-hidden="true">
+            <span class="traffic red"></span><span class="traffic yellow"></span><span class="traffic green"></span>
+            <span class="window-title">AcaTex</span>
+          </div>
+          <img src="assets/Feature.png" alt="AcaTex visual editor and compiled PDF preview side by side" width="3000" height="1884" />
+        </figure>
+      </section>
+
+      <section class="section shell comparison reveal" aria-labelledby="write-title">
+        <div class="section-heading">
+          <p class="eyebrow">01</p>
+          <h2 id="write-title" data-i18n="write.title">Write, don’t code</h2>
+          <p data-i18n="write.body">Work with the ideas on the page. AcaTex keeps the LaTeX precise and out of your way.</p>
+        </div>
+        <div class="compare-grid">
+          <article class="compare-card code-card">
+            <span class="card-label" data-i18n="write.traditional">Traditional</span>
+            <pre><code>\section{Theory}
+\textcite{fearon1995}
+\begin{equation}</code></pre>
+          </article>
+          <div class="conversion-arrow" aria-hidden="true">→</div>
+          <article class="compare-card visual-card">
+            <span class="card-label">AcaTex</span>
+            <h3 data-i18n="write.theory">Theory</h3>
+            <button class="citation-demo" type="button" aria-label="Citation conversion demo">
+              <span class="citation-key">@fearon1995</span>
+              <span class="citation-result">Fearon (1995)</span>
+            </button>
+            <div class="equation-row"><span>1</span><i>y = α + βx + ε</i></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section shell structure reveal" aria-labelledby="structure-title">
+        <div class="section-heading">
+          <p class="eyebrow">02</p>
+          <h2 id="structure-title" data-i18n="structure.title">Your paper has structure</h2>
+          <p data-i18n="structure.body">Navigate arguments, evidence, citations, and outputs as one coherent document.</p>
+        </div>
+        <div class="document-map" role="list" aria-label="Example document map">
+          <div class="map-section is-active" role="listitem">
+            <div class="map-index">I</div>
+            <div><strong data-i18n="structure.intro">Introduction</strong><span data-i18n="structure.question">Research Question</span><small>Wendt (1992)</small></div>
+          </div>
+          <div class="map-section" role="listitem">
+            <div class="map-index">II</div>
+            <div><strong data-i18n="structure.theory">Theory</strong><span data-i18n="structure.equation">Equation 1</span></div>
+          </div>
+          <div class="map-section" role="listitem">
+            <div class="map-index">III</div>
+            <div><strong data-i18n="structure.data">Data</strong><span data-i18n="structure.figure">Figure 1</span></div>
+          </div>
+          <div class="map-section" role="listitem">
+            <div class="map-index">IV</div>
+            <div><strong data-i18n="structure.results">Results</strong><span data-i18n="structure.table">Table 1</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section shell layouts reveal" aria-labelledby="layouts-title">
+        <div class="section-heading">
+          <p class="eyebrow">03</p>
+          <h2 id="layouts-title" data-i18n="layouts.title">Structured layouts</h2>
+          <p data-i18n="layouts.body">Compose text, figures, and tables in balanced, publication-ready columns.</p>
+        </div>
+        <div class="layout-controls" role="group" aria-label="Layout ratios">
+          <button class="layout-button is-active" type="button" data-ratio="50">50 / 50</button>
+          <button class="layout-button" type="button" data-ratio="70">70 / 30</button>
+          <button class="layout-button" type="button" data-ratio="30">30 / 70</button>
+        </div>
+        <div class="layout-canvas" data-layout="50" aria-live="polite">
+          <div class="layout-column column-left"><span></span><span></span><span></span><span></span><span></span></div>
+          <div class="layout-column column-right"><div class="mini-figure">Σ</div><span></span><span></span></div>
+        </div>
+      </section>
+
+      <section class="section shell tools reveal" aria-labelledby="tools-title">
+        <div class="section-heading compact-heading">
+          <p class="eyebrow">04</p>
+          <h2 id="tools-title" data-i18n="tools.title">Academic writing tools</h2>
+        </div>
+        <div class="tool-grid">
+          <div class="tool"><span class="tool-symbol">∑</span><span data-i18n="tools.equations">Equations</span></div>
+          <div class="tool"><span class="tool-symbol">“</span><span data-i18n="tools.citations">Citations</span></div>
+          <div class="tool"><span class="tool-symbol">¹</span><span data-i18n="tools.footnotes">Footnotes</span></div>
+          <div class="tool"><span class="tool-symbol">▧</span><span data-i18n="tools.figures">Figures</span></div>
+          <div class="tool"><span class="tool-symbol">▦</span><span data-i18n="tools.tables">Tables</span></div>
+          <div class="tool"><span class="tool-symbol">T</span><span data-i18n="tools.templates">Templates</span></div>
+        </div>
+      </section>
+
+      <section class="section shell pipeline-section reveal" aria-labelledby="latex-title">
+        <div class="section-heading">
+          <p class="eyebrow">05</p>
+          <h2 id="latex-title" data-i18n="latex.title">LaTeX underneath</h2>
+          <p data-i18n="latex.body">A visual workflow with a durable, portable typesetting system at its core.</p>
+        </div>
+        <div class="pipeline" aria-label="AcaTex document pipeline">
+          <span data-i18n="latex.editor">Visual Editor</span><i>→</i><span data-i18n="latex.document">Structured Document</span><i>→</i><span>LaTeX</span><i>→</i><span>PDF</span>
+        </div>
+      </section>
+
+      <section class="section shell details reveal" aria-label="Language and local-first features">
+        <article class="detail-card language-card">
+          <p class="eyebrow">06</p>
+          <h2 data-i18n="language.title">Chinese &amp; English</h2>
+          <p data-i18n="language.body">Write in English, Simplified Chinese, or both—within the same structured document.</p>
+          <div class="language-samples"><span>English</span><span>简体中文</span><span>中英混排</span></div>
+        </article>
+        <article class="detail-card local-card">
+          <p class="eyebrow">07</p>
+          <h2 data-i18n="local.title">Local-first</h2>
+          <p data-i18n="local.body">Your writing workflow can stay on your Mac, from the first sentence to the final PDF.</p>
+          <ul>
+            <li data-i18n="local.writing">Writing</li>
+            <li data-i18n="local.tectonic">Tectonic compilation</li>
+            <li data-i18n="local.bibliography">Bibliography processing</li>
+            <li data-i18n="local.pdf">PDF generation</li>
+          </ul>
+        </article>
+      </section>
+
+      <section class="final-cta shell reveal">
+        <img src="assets/acatex-icon.png" alt="" width="64" height="64" />
+        <h2 data-i18n="cta.title">The paper is yours. The typesetting is handled.</h2>
+        <p data-i18n="cta.body">AcaTex public preview is available for Apple Silicon Macs.</p>
+        <a class="button button-primary" href="https://github.com/DarcyLuai/AcaTeX/releases/latest" target="_blank" rel="noreferrer" data-i18n="hero.download">Download for macOS</a>
+      </section>
+    </main>
+
+    <footer class="footer shell">
+      <span>© <span id="year"></span> AcaTex</span>
+      <div><a href="https://github.com/DarcyLuai/AcaTeX" target="_blank" rel="noreferrer">GitHub</a><a href="https://acatex.cn">acatex.cn</a></div>
+    </footer>
+  </body>
+</html>
