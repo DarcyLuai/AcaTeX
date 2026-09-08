@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="acatex-icon.png" width="128" alt="AcaTex Logo">
+  <img src="assets/acatex-icon.png" width="128" alt="AcaTex Logo">
 </p>
 
 <h1 align="center">AcaTex</h1>
@@ -20,9 +20,11 @@
 
 ## See AcaTex in Action
 
+
 <p align="center">
-  <img src="assets/acatex-demo.gif" width="100%" alt="AcaTex Demo">
+  <img src="assets/Feature.png" width="900" alt="AcaTeX Features">
 </p>
+
 
 <p align="center">
   <strong>Visual writing on the left. LaTeX-quality PDF on the right.</strong>
