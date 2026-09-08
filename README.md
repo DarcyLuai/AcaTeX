@@ -16,6 +16,12 @@
   <strong>Public Preview · v0.2 · macOS · Apple Silicon</strong>
 </p>
 
+<p align="center">
+  <a href="https://github.com/DarcyLuai/AcaTeX/releases/latest">
+    <img src="https://img.shields.io/badge/Download-Latest%20Release-blue?style=for-the-badge" alt="Download Latest Release">
+  </a>
+</p>
+
 ---
 
 ## See AcaTex 
@@ -765,6 +771,7 @@ That's the experiment.
 
 **AcaTex 是一款由 LaTeX 驱动的可视化结构化学术写作工具。**
 
+
 AcaTex 希望保留 LaTeX 的高质量排版能力，同时把论文写作重新变成一种更加直观的可视化体验。
 
 你可以通过界面直接处理：
@@ -784,6 +791,12 @@ AcaTex 希望保留 LaTeX 的高质量排版能力，同时把论文写作重新
 而 LaTeX 代码生成、Tectonic 编译、参考文献处理以及 PDF 排版由 AcaTex 在后台完成。
 
 > **你负责论文写什么，AcaTex 负责它怎么排。**
+
+<p align="center">
+  <a href="https://github.com/DarcyLuai/AcaTeX/releases/latest">
+    <img src="https://img.shields.io/badge/下载-最新版本-blue?style=for-the-badge" alt="下载最新版本">
+  </a>
+</p>
 
 ---
 
