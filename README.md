@@ -17,6 +17,14 @@
 </p>
 
 <p align="center">
+  Supports English and Chinese academic writing.
+</p>
+
+<p align="center">
+  <a href="#中文介绍">中文介绍</a>
+</p>
+
+<p align="center">
   <a href="https://github.com/DarcyLuai/AcaTeX/releases/latest">
     <img src="https://img.shields.io/badge/Download-Latest%20Release-blue?style=for-the-badge" alt="Download Latest Release">
   </a>
