@@ -13,32 +13,64 @@
 </p>
 
 <p align="center">
-  <strong>Public Preview · macOS · Apple Silicon</strong>
+  <strong>Public Preview · v0.2 · macOS · Apple Silicon</strong>
 </p>
 
 ---
 
-## See AcaTex in Action
-
+## See AcaTex 
 
 <p align="center">
   <img src="assets/Feature.png" width="900" alt="AcaTeX Features">
 </p>
 
-
 <p align="center">
-  <strong>Visual writing on the left. LaTeX-quality PDF on the right.</strong>
+  <strong>Write visually. Organize structurally. Let LaTeX handle the typesetting.</strong>
 </p>
+
+---
+
+## 👀 What is AcaTex?
+
+AcaTex is a visual academic writing environment that keeps LaTeX underneath — without making LaTeX source code your primary writing interface.
+
+Write your paper like you would in a modern word processor.
+
+Add visually:
+
+- Sections
+- Equations
+- Citations
+- Footnotes
+- Figures
+- Tables
+- Structured layouts
+- References
+
+AcaTex handles the corresponding LaTeX structure, compilation, bibliography processing, and PDF generation in the background.
+
+No need to begin with:
+
+```latex
+\section{}
+\begin{equation}
+\begin{figure}
+\cite{}
+\label{}
+\ref{}
+```
+
+**Just write.**
 
 ---
 
 ## Why AcaTex?
 
-LaTeX is great at typesetting.
+LaTeX is excellent at typesetting.
 
-Writing LaTeX is not always great at writing.
+Writing LaTeX is not always excellent at writing.
 
-A simple academic document can quickly turn into:
+A normal academic document might contain:
 
 ```latex
 \section{Theory}
@@ -52,7 +84,7 @@ P(D)=(1-p)[q_N+(q_L-q_N)\pi_L]
 As argued by \textcite{fearon1995}...
 ```
 
-AcaTex lets you work with what those commands actually **mean**:
+AcaTex lets you work with what those commands actually mean:
 
 ```text
 Theory
@@ -64,123 +96,242 @@ Equation 1
 Fearon (1995)
 ```
 
-Instead of manually creating an equation environment, you can insert the equation visually:
+For example:
 
 ```math
 P(D)=(1-p)\left[q_N+(q_L-q_N)\pi_L\right]
 ```
 
-Underneath, AcaTex still generates and compiles LaTeX.
+can be inserted visually while LaTeX still handles the final mathematical typesetting.
 
-You get the typesetting system without having to make the typesetting language your writing interface.
-
-> **You focus on the paper. AcaTex handles the typesetting.**
+> **You decide what the document contains. AcaTex handles how that structure becomes LaTeX.**
 
 ---
 
-# Built for Academic Writing
+# ✨ What's New in v0.2
 
-AcaTex treats a paper as more than a page full of formatted text.
+AcaTex v0.2 focuses on making academic documents more structured, more flexible, and more natural to edit.
 
-A paper has structure.
+---
+
+## 🧱 Structured Visual Layouts
+
+AcaTex now supports structured multi-column layouts.
+
+### 50 / 50
+
+```text
+┌───────────────┬───────────────┐
+│               │               │
+│      50%      │      50%      │
+│               │               │
+│      Text     │     Figure    │
+│               │               │
+└───────────────┴───────────────┘
+```
+
+### 70 / 30
+
+```text
+┌──────────────────────┬────────┐
+│                      │        │
+│         70%          │  30%   │
+│                      │        │
+│         Text         │ Figure │
+│                      │        │
+└──────────────────────┴────────┘
+```
+
+Paragraphs, figures, tables, equations, and other document objects can be placed inside structured layouts.
+
+AcaTex adapts the generated LaTeX depending on where an object appears.
+
+> **Structured layout, not freeform desktop publishing.**
+
+---
+
+## 📝 Title, Author & Date
+
+AcaTex now supports document-level metadata visually.
+
+You can edit:
+
+- Title
+- Author
+- Date
+
+The date can also be hidden entirely.
+
+Example:
+
+```text
+Beyond Frequency:
+Loss Framing and the Temporal Structure of International Risk
+
+Darcy Lu
+
+September 8, 2026
+```
+
+These values remain semantic document metadata.
+
+The selected LaTeX template still controls their final appearance.
+
+---
+
+## Document Map
+
+AcaTex treats a paper as a structured document rather than a continuous stream of pages.
 
 ```text
 Paper
 │
 ├── Introduction
 │   ├── Paragraph
-│   └── Citation
+│   ├── Fearon (1995)
+│   └── Footnote 1
 │
 ├── Theory
 │   ├── Paragraph
-│   ├── Equation
-│   └── Footnote
+│   └── Equation 1
 │
 ├── Data
-│   └── Figure
+│   └── Figure 1
 │
 ├── Results
-│   └── Table
+│   └── Table 1
 │
 └── Conclusion
 ```
 
-AcaTex makes that structure visible and directly editable.
-
-Move a section, and its numbering follows.
-
-Move a paragraph, equation, figure, or table, and the document structure follows.
-
-The idea is simple:
-
-> **You decide what something is. AcaTex handles how it should be typeset.**
-
----
-
-# Features
-
-## Visual Academic Writing
-
-Write in a familiar visual editor instead of editing LaTeX source.
-
-AcaTex supports:
-
-- Rich text editing
-- Document titles
-- Multi-level headings
-- Structured paragraphs
-- Fonts and typography
-- Footnotes
-- Drag-and-drop editing
-- Keyboard shortcuts
-- Undo and redo
-- Local document saving
-
-The editor is designed for **writing rather than programming**.
-
----
-
-## Document Map
-
-Long papers should not require endless scrolling.
-
-AcaTex's **Document Map** gives you a structural view of your paper:
-
-```text
-1 Introduction
-   Research Question
-   Wendt (1992)
-
-2 Theory
-   Bargaining Framework
-   Equation 1
-
-3 Data
-   Figure 1
-
-4 Results
-   Table 1
-
-5 Conclusion
-```
-
-Use it to:
+Document Map lets you:
 
 - Navigate between sections
 - Locate citations
-- Find equations
+- Locate equations
 - Find figures and tables
 - Reorganize document structure
 - Drag content between sections
-- Rename document elements
+- Rename document objects
 
-Instead of treating your paper as a continuous stream of pages, Document Map treats it as a **structured academic document**.
+Clicking a section navigates directly to that part of the document.
+
+Collapsed mode provides compact section navigation without filling the sidebar with unnecessary symbols.
+
+---
+
+## Drag & Drop
+
+AcaTex uses direct manipulation for document structure.
+
+Instead of:
+
+```text
+Move Up
+Move Down
+Change Position
+```
+
+you can simply drag:
+
+- Sections
+- Paragraphs
+- Figures
+- Tables
+- Equations
+- Citations
+
+to new positions.
+
+Inline citation movement also provides an insertion caret so citations can be moved to precise text positions.
+
+---
+
+## Citations without the BibTeX Headache
+
+AcaTex keeps citation keys underneath the interface.
+
+Instead of:
+
+```text
+@fearon1995
+```
+
+you work with:
+
+```text
+Fearon (1995)
+```
+
+or:
+
+```text
+(Fearon 1995)
+```
+
+depending on the selected citation style and citation mode.
+
+Current citation workflows include:
+
+- Chicago Author-Date
+- Chicago Notes & Bibliography
+- APA 7
+- MLA 9
+
+AcaTex can:
+
+- Paste BibTeX
+- Import `.bib`
+- Add references manually
+- Manage references locally
+- Insert citations visually
+- Edit citations
+- Remove citations
+- Generate bibliographies
+
+---
+
+## Citation Page Locators
+
+Citation occurrences can now contain specific page locators.
+
+For example:
+
+```text
+(Fearon 1995, 381)
+```
+
+or:
+
+```text
+(Fearon 1995, 397–99)
+```
+
+The locator belongs to that citation occurrence, not the underlying reference.
+
+That means the same paper can be cited at different pages without duplicating the bibliography entry.
+
+---
+
+## Explanatory Footnotes
+
+AcaTex now supports normal academic footnotes independently from citation notes.
+
+For example:
+
+```text
+Tail risk is analytically distinct from conflict probability.¹
+```
+
+Footnote numbering follows document order automatically.
+
+If footnotes are inserted, deleted, or moved, numbering updates with the document.
 
 ---
 
 ## Mathematical Equations
 
-Insert and edit mathematical equations visually while keeping LaTeX-quality mathematical typesetting.
+Insert mathematical expressions visually while preserving LaTeX-quality mathematics.
 
 For example:
 
@@ -196,7 +347,7 @@ q_N+
 \right]
 ```
 
-AcaTex lets you work with mathematical content as part of the visual document.
+AcaTex keeps equations as semantic document objects rather than ordinary text.
 
 You do not need to manually create:
 
@@ -206,96 +357,75 @@ You do not need to manually create:
 \end{equation}
 ```
 
-just to add a mathematical expression to your paper.
-
-LaTeX remains responsible for the final mathematical typesetting.
+for every display equation.
 
 ---
 
-## Citations without the BibTeX Headache
+## Figures
 
-Academic citations should feel like part of writing — not a programming task.
+Figures are semantic academic objects.
 
-AcaTex lets you:
-
-- Paste BibTeX
-- Import `.bib` files
-- Add references manually
-- Manage references locally
-- Insert citations visually
-- Edit and remove citations
-- Generate bibliographies automatically
-
-Instead of seeing:
-
-```text
-@wendt1992anarchy
-```
-
-you work with:
-
-```text
-Wendt (1992)
-```
-
-AcaTex handles the citation key, BibTeX data, bibliography processing, and LaTeX commands underneath.
-
-### Citation Styles
-
-Current citation workflows include:
-
-- Chicago Author-Date
-- Chicago Notes & Bibliography
-- APA 7
-- MLA 9
-
-Bibliography processing is handled locally through the LaTeX toolchain.
-
----
-
-## Figures & Tables
-
-Figures and tables are treated as academic document objects rather than just things placed on a page.
-
-### Figures
-
-Add and manage:
+AcaTex supports:
 
 - Local images
 - Captions
 - Labels
-- Size settings
+- Size controls
 - Alignment
-- References
+- Structured-layout placement
+- Document Map navigation
 
-### Tables
+Figure numbers are derived from document order.
 
-AcaTex supports different table workflows, including:
+The figure number and user caption are kept separate.
 
-- Academic LaTeX-style tables
-- Grid-style tables
+Example:
+
+```text
+Figure 1 — Conceptual Framework
+```
+
+rather than storing `Figure 1` as the caption itself.
+
+---
+
+## Tables
+
+AcaTex supports two table styles.
+
+### Academic Table
+
+A cleaner LaTeX-style table suitable for academic papers.
+
+### Grid Table
+
+A fully bordered table similar to Word or Excel.
+
+Tables support:
+
 - Captions
 - Labels
 - Row and column editing
 - Alignment
+- Layout-container placement
 
-AcaTex translates these visual objects into the corresponding LaTeX structure.
+Table numbering, captions, and internal LaTeX labels are treated as separate concepts.
 
 ---
 
-## Footnotes
+## Text Color
 
-Footnotes are part of the document structure rather than manually typed superscript numbers.
+AcaTex now supports basic text coloring through a lightweight visual selector.
 
-AcaTex manages footnote numbering and passes the final structure to LaTeX for typesetting.
+A small palette provides several commonly used colors without requiring a full color-picker interface.
 
-Reorganize the paper, insert another footnote, or delete one — numbering follows the document.
+Text color is preserved in LaTeX output where supported.
 
 ---
 
 ## Live PDF Preview
 
-Write visually while keeping the final typeset document beside you.
+AcaTex separates the writing interface from the final typeset output.
 
 ```text
 Visual Editor
@@ -313,9 +443,9 @@ The editor and PDF are two views of the same document:
 
 > **One optimized for writing. One optimized for typesetting.**
 
-The editor does not need to imitate a sheet of paper.
+The visual editor does not need to imitate the final sheet of paper.
 
-The PDF shows what the final paper actually looks like.
+The PDF shows the final LaTeX result.
 
 ---
 
@@ -323,16 +453,14 @@ The PDF shows what the final paper actually looks like.
 
 AcaTex does not replace LaTeX with a simplified typesetting engine.
 
-It uses LaTeX as the typesetting foundation.
-
-The difference is the interface.
+It uses LaTeX as the foundation.
 
 ### Traditional workflow
 
 ```text
 Writer
   ↓
-LaTeX Commands
+LaTeX Source
   ↓
 TeX Engine
   ↓
@@ -361,9 +489,33 @@ LaTeX remains available as an export format.
 
 ---
 
+## Templates
+
+AcaTex supports academic document templates so that content and typesetting can remain separate.
+
+```text
+                    Your Paper
+                        │
+          ┌─────────────┼─────────────┐
+          ↓             ↓             ↓
+     Template A    Template B    Template C
+          ↓             ↓             ↓
+        PDF A          PDF B          PDF C
+```
+
+Your content remains your content.
+
+The template determines how that content is typeset.
+
+v0.2 also improves compatibility with custom LaTeX templates and structured document elements.
+
+Complex `.cls`, `.sty`, custom macros, and unusual packages may still have limited visual-editing support.
+
+---
+
 ## Chinese & English Academic Writing
 
-AcaTex is designed for multilingual academic writing.
+AcaTex supports multilingual academic writing.
 
 Current support includes:
 
@@ -371,7 +523,7 @@ Current support includes:
 - Simplified Chinese academic documents
 - Mixed Chinese-English writing
 - Unicode text
-- Mathematical content in multilingual documents
+- Mathematical content
 - Open-source Chinese and English fonts
 - System fonts
 - User-imported fonts
@@ -384,9 +536,9 @@ and:
 
 > 国际制度可能改变国家在战略互动中的激励结构。
 
-can exist in the same academic workflow.
+can exist in the same document.
 
-Mathematical expressions remain available in multilingual documents:
+Mathematics also remains available:
 
 ```math
 \pi_L=\frac{\rho_N}{1-\rho_L+\rho_N}
@@ -396,20 +548,19 @@ Mathematical expressions remain available in multilingual documents:
 
 ## Fonts & Appearance
 
-AcaTex includes a selection of academic-friendly English and Chinese fonts.
+AcaTex supports:
 
-It also supports:
-
-- Open-source fonts
+- Academic-friendly English fonts
+- Chinese fonts
 - System fonts
 - Custom font import
 - Light mode
 - Dark mode
 - Eye Comfort mode
-- Interface size adjustment
 - Editor zoom
+- Interface sizing
 
-The Eye Comfort writing mode uses a subtle warm-paper background while leaving the generated PDF unchanged.
+Eye Comfort mode changes the writing environment without changing the final PDF appearance.
 
 ---
 
@@ -421,40 +572,18 @@ Core AcaTex workflows run locally:
 
 - Writing
 - Saving
+- Autosave
 - LaTeX compilation
 - Bibliography processing
-- Reference management
+- Citation management
 - PDF generation
-- Figures and tables
-- Document structure management
+- Figures
+- Tables
+- Document structure
 
 Tectonic and the required writing infrastructure are integrated into the desktop application.
 
-No browser-based writing environment is required for the core writing workflow.
-
----
-
-# Templates
-
-AcaTex supports academic document templates so that **content and typesetting can remain separate**.
-
-The idea is:
-
-```text
-                    Your Paper
-                        │
-          ┌─────────────┼─────────────┐
-          ↓             ↓             ↓
-     Template A    Template B    Template C
-          ↓             ↓             ↓
-        PDF A          PDF B          PDF C
-```
-
-Your paper remains your paper.
-
-The template decides how it should be typeset.
-
-Custom LaTeX template compatibility is still being expanded during the Public Preview.
+No browser-based writing environment is required for the core workflow.
 
 ---
 
@@ -462,7 +591,7 @@ Custom LaTeX template compatibility is still being expanded during the Public Pr
 
 ## macOS
 
-The current AcaTex Public Preview supports:
+AcaTex v0.2 currently supports:
 
 - **macOS**
 - **Apple Silicon**
@@ -476,7 +605,9 @@ Download the latest `.dmg` from the **Releases** section of this repository.
 3. Drag AcaTex into `Applications`
 4. Launch AcaTex
 
-Support for additional platforms is planned for future releases.
+The macOS release is signed and notarized for external distribution.
+
+Support for additional platforms is planned for future versions.
 
 ---
 
@@ -485,12 +616,12 @@ Support for additional platforms is planned for future releases.
 AcaTex is **not**:
 
 - A replacement for every possible LaTeX workflow
-- A visual parser for every LaTeX package ever created
+- A parser for every LaTeX package ever created
+- A freeform page-design application
 - A browser-based collaborative editor
-- A freeform desktop-publishing application
 - An attempt to reproduce every feature of Microsoft Word
 
-AcaTex **is** an attempt to make the most common academic writing workflow dramatically easier.
+AcaTex **is** an attempt to make common academic writing workflows dramatically easier.
 
 The focus is on:
 
@@ -501,11 +632,12 @@ The focus is on:
 - Footnotes
 - Figures
 - Tables
+- Structured layouts
 - References
 - Templates
 - Professional typesetting
 
-Complex custom macros, unusual packages, and highly specialized document classes may not yet be fully editable through the visual interface.
+Complex custom macros, specialized packages, and highly unusual document classes may not yet be fully editable visually.
 
 You can still export your work to LaTeX.
 
@@ -513,117 +645,71 @@ You can still export your work to LaTeX.
 
 # Public Preview
 
-AcaTex is under active development.
+AcaTex v0.2 remains a **Public Preview**.
 
-This is an early public release.
+The core writing and typesetting workflow is functional, but the application is still under active development.
 
-Some features may change.  
-Some workflows may still contain bugs.  
-Some LaTeX documents may contain structures that AcaTex does not yet understand.
+Some workflows may contain bugs.
 
-That's why this is a **Public Preview**.
+Some LaTeX documents may include structures AcaTex does not yet understand.
 
 If something breaks, please open an Issue.
 
-Useful bug reports include:
+Useful reports include:
 
 - What you were trying to do
 - What happened
 - What you expected
+- A screenshot
+- A minimal `.tex` / `.bib` example where possible
 - Your AcaTex version
-- A screenshot or minimal example
 
-Real-world academic documents are especially useful for improving compatibility.
+Real academic papers and templates are especially useful for improving compatibility.
+
+---
+
+# Changes in v0.2
+
+Major improvements include:
+
+- Structured 50/50, 70/30 and related visual layouts
+- Better layout-aware Figure and Table generation
+- Document title, author and date controls
+- Hide-date support
+- Normal explanatory footnotes
+- Citation page locators
+- Improved Chicago Author-Date rendering
+- Improved citation save/reopen behavior
+- Precise citation drag insertion feedback
+- Improved Document Map navigation
+- Improved section and object dragging
+- Functional text colors
+- Improved figure numbering/caption separation
+- Improved table numbering/caption/label separation
+- Improved autosave behavior
+- Improved template compatibility
+- UI and macOS icon polish
+- Numerous stability and typesetting fixes
 
 ---
 
 # Roadmap
 
-## v0.2 — Structure & Layout
+Future versions may continue to expand:
 
-The next stage of AcaTex focuses on making structured academic documents more powerful without turning the editor into a desktop-publishing application.
-
-### Advanced Visual Layouts
-
-Support for more complex structured layouts, including:
-
-**50 / 50**
-
-```text
-┌───────────┬───────────┐
-│    50%    │    50%    │
-└───────────┴───────────┘
-```
-
-**70 / 30**
-
-```text
-┌────────────────┬──────┐
-│      70%       │ 30%  │
-└────────────────┴──────┘
-```
-
-The goal is structured layout — not arbitrary x/y positioning.
-
-### Improved Template Compatibility
-
-Better support for custom:
-
-- `.tex`
-- `.cls`
-- `.sty`
-
-files and academic templates.
-
-AcaTex will continue developing a compatibility layer for common LaTeX document structures while preserving unsupported advanced LaTeX where practical.
-
-### Better Document Navigation
-
-Improved synchronization between **Document Map** and the visual editor.
-
-Click a section, citation, equation, figure, or table and navigate directly to the corresponding document object.
-
-### Cross-References
-
-Visual references to:
-
-- Sections
-- Equations
-- Figures
-- Tables
-
-without requiring users to manually manage:
-
-```latex
-\label{}
-\ref{}
-```
-
-### Continued Improvements
-
-- More complex academic document structures
-- Citation workflows
-- Stability
-- Performance
-- Import/export compatibility
-- Editor ↔ PDF synchronization
-
----
-
-## Future
-
-Possible future directions include:
-
-- Broader platform support
+- Custom template compatibility
+- Cross-references
+- More advanced structured layouts
+- Better editor ↔ PDF synchronization
+- Reference workflows
 - Academic metadata search
-- More advanced template adaptation
-- Expanded visual layout tools
-- Deeper editor ↔ PDF synchronization
-- Improved reference workflows
+- Stability and performance
+- Import/export compatibility
+- Additional platform support
 
 The roadmap is intentionally flexible.
 
-AcaTex will evolve based on **real-world use and user feedback rather than feature count alone**.
+AcaTex will evolve based on real-world use rather than feature count alone.
 
 ---
 
@@ -679,104 +765,94 @@ That's the experiment.
 
 **AcaTex 是一款由 LaTeX 驱动的可视化结构化学术写作工具。**
 
-你可以像使用现代文字处理软件一样完成论文写作，通过可视化方式处理：
+AcaTex 希望保留 LaTeX 的高质量排版能力，同时把论文写作重新变成一种更加直观的可视化体验。
 
-- 论文标题与多级章节
+你可以通过界面直接处理：
+
+- 标题与多级章节
 - 正文
 - 数学公式
-- Citation 与参考文献
+- Citation
+- 参考文献
 - 脚注
 - 图片
 - 表格
-- 文档结构
+- 多栏结构
+- 文档导航
 - 字体与格式
 
 而 LaTeX 代码生成、Tectonic 编译、参考文献处理以及 PDF 排版由 AcaTex 在后台完成。
-
-不需要先学会：
-
-```latex
-\section{}
-\begin{equation}
-\begin{figure}
-\cite{}
-\label{}
-\ref{}
-```
-
-再开始写论文。
 
 > **你负责论文写什么，AcaTex 负责它怎么排。**
 
 ---
 
-## 为什么做 AcaTex？
+## v0.2 有什么新内容？
 
-LaTeX 的问题并不是排版能力不够。
+### 结构化多栏排版
 
-恰恰相反，它的排版能力非常强。
-
-问题在于，很多用户只是想写一篇论文，却需要同时理解：
-
-- 命令
-- 环境
-- 宏包
-- BibTeX
-- Citation key
-- 编译流程
-- 各种排版规则
-
-AcaTex 希望保留 LaTeX 的优势，同时改变它的交互方式。
-
-### 传统 LaTeX
+现在可以通过可视化方式创建：
 
 ```text
-作者
- ↓
-LaTeX 代码
- ↓
-TeX
- ↓
-PDF
+50 / 50
 ```
-
-### AcaTex
 
 ```text
-作者
- ↓
-可视化编辑器
- ↓
-结构化文档
- ↓
-自动生成 LaTeX
- ↓
-Tectonic
- ↓
-PDF
+┌───────────────┬───────────────┐
+│      50%      │      50%      │
+│               │               │
+│      文字     │      图片     │
+└───────────────┴───────────────┘
 ```
 
-LaTeX 仍然存在。
+以及：
 
-只是你不需要一直看见它。
+```text
+70 / 30
+```
+
+```text
+┌──────────────────────┬────────┐
+│         70%          │  30%   │
+│                      │        │
+│         文字         │  图片  │
+└──────────────────────┴────────┘
+```
+
+文字、图片、表格、公式等内容可以进入结构化布局。
+
+AcaTex 会根据它们所在的位置自动生成合适的 LaTeX。
+
+---
+
+## 文档标题、作者与日期
+
+现在可以直接在编辑器中管理：
+
+- Title
+- Author
+- Date
+
+日期也可以完全隐藏。
+
+AcaTex 会把这些内容作为文档元数据，而不是普通正文处理。
 
 ---
 
 ## Document Map
 
-AcaTex 不仅把论文看作一串文字，而是一个具有结构的学术文档。
+AcaTex 将论文理解为一个结构化文档：
 
 ```text
 论文
 │
 ├── Introduction
 │   ├── 正文
-│   └── Wendt (1992)
+│   ├── Fearon (1995)
+│   └── Footnote 1
 │
 ├── Theory
-│   ├── 正文
-│   ├── Equation 1
-│   └── Footnote
+│   └── Equation 1
 │
 ├── Data
 │   └── Figure 1
@@ -787,107 +863,102 @@ AcaTex 不仅把论文看作一串文字，而是一个具有结构的学术文�
 └── Conclusion
 ```
 
-通过左侧 **Document Map**，可以：
+可以通过左侧 Document Map：
 
 - 快速定位章节
 - 查看 Citation
 - 查看公式
-- 查看图片与表格
-- 拖拽调整章节顺序
+- 查看图片
+- 查看表格
+- 拖拽调整内容
 - 重组论文结构
 
-论文不再只是一个需要不断滚动的长页面。
-
 ---
 
-## 数学公式
-
-通过可视化方式插入和编辑数学公式，同时使用 LaTeX 完成最终数学排版。
-
-例如：
-
-```math
-P(D)=(1-p)\left[q_N+(q_L-q_N)\pi_L\right]
-```
-
-无需为了插入一个公式而把整篇论文变成代码编辑体验。
-
----
-
-## Citation 与参考文献
-
-AcaTex 希望把 Citation 重新变成写作的一部分。
-
-你可以：
-
-- 粘贴 BibTeX
-- 导入 `.bib`
-- 手动添加参考文献
-- 本地管理文献
-- 可视化插入 Citation
-- 编辑和删除 Citation
-- 自动生成参考文献
+## Citation
 
 用户看到的是：
 
 ```text
-Wendt (1992)
+Fearon (1995)
 ```
 
 而不是：
 
 ```text
-@wendt1992anarchy
+@fearon1995
 ```
 
-当前 Citation 工作流包括：
+支持：
 
 - Chicago Author-Date
 - Chicago Notes & Bibliography
 - APA 7
 - MLA 9
 
-底层 BibTeX、biblatex 与参考文献编译流程由 AcaTex 处理。
+v0.2 还加入了 Citation 页码定位。
+
+例如：
+
+```text
+(Fearon 1995, 381)
+```
+
+同一篇文章可以在不同位置引用不同页码，而不会产生重复的参考文献条目。
+
+---
+
+## 脚注
+
+现在可以插入普通解释性脚注。
+
+例如：
+
+```text
+Tail risk is analytically distinct from conflict probability.¹
+```
+
+脚注编号会根据文档顺序自动更新。
 
 ---
 
 ## 图片与表格
 
-AcaTex 将图片和表格作为学术文档对象进行处理。
+AcaTex 会区分：
 
-支持：
+```text
+编号
+Caption
+Label
+```
 
-- Caption
-- Label
-- 图片大小与对齐
-- Academic Table
-- Grid Table
-- 行列编辑
-- 文档结构导航
+例如：
 
-这些内容最终由 AcaTex 转换为对应的 LaTeX 结构。
+```text
+Figure 1 — Conceptual Framework
+```
+
+其中：
+
+- `Figure 1` 是自动编号
+- `Conceptual Framework` 是用户 Caption
+- `label` 是内部交叉引用 ID
+
+三者不会混在一起。
+
+表格同样采用这一逻辑。
 
 ---
 
-## 实时 PDF 预览
+## 数学公式
 
-可视化编辑器用于写作，PDF 用于展示最终排版。
+可以通过可视化方式插入数学公式：
 
-```text
-可视化编辑
-    ↓
-结构化文档
-    ↓
-LaTeX
-    ↓
-Tectonic
-    ↓
-PDF
+```math
+P(D)=(1-p)\left[q_N+(q_L-q_N)\pi_L\right]
 ```
 
-二者是同一份学术文档的两种视图：
-
-> **一个服务于写作，一个服务于排版。**
+无需为了一个公式手动处理完整的 LaTeX equation environment。
 
 ---
 
@@ -896,18 +967,82 @@ PDF
 AcaTex 支持：
 
 - 英文学术文档
-- 简体中文学术文档
+- 简体中文
 - 中英文混排
-- Unicode 文本
+- Unicode
 - 数学公式
 - 中英文字体
-- 系统字体
 - 自定义字体导入
 
-例如：
+---
 
-> International institutions may alter states' strategic incentives.
+## 本地优先
 
-以及：
+AcaTex 的核心写作流程可以在本地完成：
 
-> 国际制度可能改变国家的战略激励
+- 写作
+- 保存
+- 自动保存
+- LaTeX 编译
+- Citation
+- 参考文献
+- PDF
+- 图片
+- 表格
+- 文档结构
+
+你的论文不应该因为没有网络而无法继续写。
+
+---
+
+## 下载
+
+当前版本：
+
+**AcaTex v0.2**
+
+支持：
+
+**macOS · Apple Silicon**
+
+请前往本仓库的 **Releases** 下载最新 `.dmg`。
+
+---
+
+## 当前状态
+
+AcaTex 仍然处于 **Public Preview**。
+
+复杂的 LaTeX 宏包、自定义命令、特殊 `.cls/.sty` 文件以及部分边缘场景仍可能存在兼容性问题。
+
+如果遇到 Bug，欢迎提交 Issue。
+
+---
+
+## 关于源代码
+
+本仓库目前用于：
+
+- AcaTex 版本发布
+- 文档
+- Issue 追踪
+- 功能建议
+- 用户反馈
+
+AcaTex 桌面应用核心代码目前暂未公开。
+
+---
+
+## AcaTex 的想法
+
+LaTeX 的一个重要思想是：
+
+> **作者应该描述文档的结构，而不是手工调整每一页的排版。**
+
+AcaTex 想再往前一步：
+
+> **如果作者连描述这些结构的代码都不需要写呢？**
+
+这就是 AcaTex 正在尝试的事情。
+
+**可视化写作，使用 LaTeX 排版。**
