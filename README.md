@@ -1,60 +1,40 @@
 <p align="center">
-  <img src="assets/acatex-icon.png" width="128" alt="AcaTex Logo">
+  <img src="assets/acatex-icon.png" width="128" alt="AcaTeX Logo">
 </p>
 
-<h1 align="center">AcaTex</h1>
+<h1 align="center">AcaTeX</h1>
+
+<p align="center"><strong>Write visually. Typeset with LaTeX.</strong></p>
+
+<p align="center">A visual, structured academic writing environment powered by LaTeX.</p>
+
+<p align="center"><strong>Public Preview · v0.5.0 · macOS (Apple Silicon) & Windows (x64)</strong></p>
+
+<p align="center">Supports English and Chinese academic writing.</p>
 
 <p align="center">
-  <strong>Write visually. Typeset with LaTeX.</strong>
-</p>
-
-<p align="center">
-  A visual, structured academic writing environment powered by LaTeX.
-</p>
-
-<p align="center">
-  <strong>Public Preview · v0.4 · macOS · Apple Silicon</strong>
-</p>
-
-<p align="center">
-  Supports English and Chinese academic writing.
+  <a href="#中文介绍">中文介绍</a> ·
+  <a href="https://acatex.cn/help">Documentation / 使用说明</a>
 </p>
 
 <p align="center">
-  <a href="#中文介绍">中文介绍</a>
-</p>
-
-<p align="center">
-  <a href="https://github.com/DarcyLuai/AcaTeX/releases/latest">
-    <img src="https://img.shields.io/badge/Download-Latest%20Release-blue?style=for-the-badge" alt="Download Latest Release">
+  <a href="https://github.com/DarcyLuai/AcaTeX/releases/tag/v0.5.0mac">
+    <img src="https://img.shields.io/badge/Download-macOS%20(Apple%20Silicon)-blue?style=for-the-badge&logo=apple" alt="Download AcaTeX for macOS">
+  </a>
+  <a href="https://github.com/DarcyLuai/AcaTeX/releases/tag/v0.5.0win">
+    <img src="https://img.shields.io/badge/Download-Windows%20(x64)-blue?style=for-the-badge&logo=windows" alt="Download AcaTeX for Windows">
   </a>
 </p>
 
+<p align="center"><a href="https://github.com/DarcyLuai/AcaTeX/releases">All releases</a> · <a href="https://github.com/DarcyLuai/AcaTeX/issues">Report an issue</a></p>
+
 ---
 
-## 👀 What is AcaTex?
+## 👀 What is AcaTeX?
 
-AcaTex is a **visual, structured academic writing environment powered by LaTeX**.
+AcaTeX is a **visual, structured academic writing environment powered by LaTeX**. Write in a familiar editor while working with the actual elements of an academic document: sections, equations, citations, cross-references, figures, tables, footnotes, and labels.
 
-Instead of treating your paper as plain text — or asking you to write LaTeX commands directly — AcaTex lets you work with the actual structure of an academic document.
-
-Write your paper like you would in a modern word processor, while AcaTex understands and manages:
-
-- Sections and document structure
-- Equations and equation numbering
-- Citations and bibliographies
-- Cross-references
-- Footnotes
-- Figures
-- Tables
-- Structured layouts
-- References and labels
-
-AcaTex handles the corresponding **LaTeX structure, compilation, bibliography processing, cross-referencing, and PDF generation** in the background.
-
-With v0.4, AcaTex can also work with **Zotero libraries and Word documents**, making it easier to move between existing academic workflows and LaTeX-quality typesetting.
-
-No need to begin with:
+AcaTeX handles LaTeX structure, compilation, bibliography processing, cross-referencing, and PDF generation behind the scenes. You can work visually without starting from commands such as:
 
 ```latex
 \section{}
@@ -67,15 +47,9 @@ No need to begin with:
 
 **Just write.**
 
----
+## Why AcaTeX?
 
-## Why AcaTex?
-
-LaTeX is excellent at typesetting.
-
-But writing LaTeX source code is not always the most natural way to write a paper.
-
-A typical academic document might contain:
+LaTeX is excellent at typesetting, but writing its source code is not always the most natural way to write a paper. For example, a document might contain:
 
 ```latex
 \section{Theory}
@@ -89,220 +63,115 @@ P(D)=(1-p)[q_N+(q_L-q_N)\pi_L]
 As argued by \textcite{fearon1995}...
 ```
 
-AcaTex lets you work directly with what those commands **mean**:
+In AcaTeX, you work with the **section**, **equation**, and **citation** as document objects, while LaTeX handles their final typesetting.
 
-```text
-Theory
+- A figure is a **figure**, not merely a code block.
+- A citation is a **reference to a source**, not just a `\cite{}` string.
+- An equation can be **numbered and cross-referenced**.
+- A section belongs to the **structure of your paper**.
 
-Previous research suggests that...
+> **You decide what the document means. AcaTeX handles how that structure becomes LaTeX.**
 
-Equation 1
-
-Fearon (1995)
-```
-
-For example:
-
-```math
-P(D)=(1-p)\left[q_N+(q_L-q_N)\pi_L\right]
-```
-
-can be inserted and edited visually, while LaTeX still handles the final mathematical typesetting.
-
-The same principle applies throughout the document:
-
-- A figure is not just a block of LaTeX code — it is a **figure**.
-- A citation is not just a `\cite{}` command — it is a **reference to a source**.
-- An equation is not just an environment — it is an **equation that can be numbered and cross-referenced**.
-- A section is not just `\section{}` — it is part of the **structure of your paper**.
-
-Because AcaTex understands these relationships, moving or reorganizing content can automatically update numbering, references, and document structure.
-
-> **You decide what the document means. AcaTex handles how that structure becomes LaTeX.**
+AcaTeX is not intended to replace LaTeX. It offers a more visual way to work with it while preserving LaTeX's portability and typesetting capabilities.
 
 ---
 
-AcaTex is not intended to replace LaTeX.
+## ✨ AcaTeX v0.5.0 — Highlights
 
-It is designed to provide a more visual and structured way to **work with LaTeX** — while preserving the typesetting quality, portability, and flexibility that make LaTeX valuable for academic writing.
+### 🪟 Now on Windows
 
-# AcaTex v0.4
+AcaTeX v0.5.0 is available for **macOS (Apple Silicon)** and **Windows (x64)**. Each platform has its own GitHub Release, so installation packages and platform-specific notes are easy to find.
 
-AcaTex v0.4 is a major update focused on structured academic writing, citations, cross-references, document interoperability, and complex LaTeX workflows.
+### 🤖 AI-compatible document editing
 
-## ✨What’s New 
+The **AcaTeX AI Protocol** enables a model-independent, review-first workflow with compatible AI tools such as ChatGPT, Claude, and DeepSeek:
 
-### Structured Document Model
+1. **Prepare AI Copy** in AcaTeX.
+2. Give the exported request package to your preferred AI.
+3. **Import AI Changes** as a structured patch.
+4. Review proposed changes and save a **new copy**.
 
-The document architecture has been substantially redesigned.
+The workflow uses stable document identities and validation to protect unrelated content. AcaTeX does not require an AI API key, does not automatically upload your manuscript, and does not silently overwrite the original document.
 
-Instead of treating a document as a collection of text blocks, AcaTex can now understand relationships between sections, equations, figures, tables, citations, and references.
+### 📄 Writing ↔ PDF
 
-This provides the foundation for more reliable cross-referencing, document checking, importing, exporting, and future academic-writing tools.
+Integrated LaTeX compilation and PDF preview bring your writing and final output together. Supported writing–PDF navigation helps you move between the editor and the rendered document.
 
-### Smart Table Import & Fit
+### 📚 Research Marks
 
-AcaTex can import complex tables such as Table 1 from Word documents, recognize their structure, and automatically adjust font sizes and column widths.
+Organize key parts of your argument using structured research marks:
 
-The layout engine attempts to fit the table cleanly onto a portrait A4 page whenever possible, while preserving readability.
+- **RQ** — Research Question
+- **Claim** — Central argument
+- **Hypothesis** — Theoretical prediction
+- **Finding** — Research finding
 
-### TIFF / TIF Figure Support
+### 🧩 Structured documents and cross-references
 
-Scientific figures in TIFF and TIF formats can now be imported directly into AcaTex.
+AcaTeX's native `.texflow` format preserves visual document structure and AcaTeX-specific metadata. Manage sections through the structure panel, and use cross-references for sections, equations, figures, and tables.
 
-### Word Import & Export
+### ∑ Mathematics, citations, figures, and tables
 
-AcaTex now supports Word document import and export, allowing documents to move between Word and AcaTex more easily.
+- Inline and display equations, including common mathematical environments
+- Citation and bibliography workflows, including multiple sources in a citation
+- Zotero local-library search and supported literature-search workflows
+- Figure insertion, captions, and TIFF/TIF support
+- Visual tables and Smart Table Import & Fit
+- Word import/export and LaTeX import/export workflows
+- Document Check for common document and reference issues
 
-This makes it possible to use LaTeX-quality typesetting and structured academic writing without requiring every collaborator to work directly with LaTeX.
+### ⚡ Editing performance
 
-### Cross-References
+Version 0.5.0 includes improvements for complex documents with many citations and equations. Internal input-latency benchmarks (median / P95, milliseconds):
 
-AcaTex now supports cross-references for figures, tables, equations, and sections.
+| Scenario | Before | v0.5.0 |
+|---|---:|---:|
+| 20 paragraphs, PDF off | 16.6 / 18.3 | 16.6 / 18.2 |
+| 240 citations + 240 equations, PDF off | 66.1 / 149.1 | 24.3 / 65.0 |
+| 240 citations + 240 equations, PDF on | 75.8 / 163.8 | 24.0 / 81.0 |
 
-When content is moved, inserted, or reorganized, numbering and references are automatically updated.
+*Internal test results; actual performance depends on hardware and document complexity.*
 
-### Improved Equation Editing
+### ⚙️ Typesetting compatibility
 
-Equation editing has been redesigned with:
-
-- Inline equations by default
--  Easy switching between inline and display equations
-- Optional equation numbering
-- Improved automatic layout for long equations
-
-### Better Citation Management
-
-Citation workflows now support:
-
-- Multiple references in a single citation
-- Centralized management of the same reference across the document
-- Improved support for different citation styles
-
-### 🔍 Zotero Integration
-
-AcaTex v0.4 can search your local Zotero library directly, while retaining online literature search.
-
-References can be inserted without manually copying and managing BibTeX entries.
-
-### ✓ Document Check
-
-The new Document Check helps identify common problems before submission, including:
-
-- Broken or unresolved references
-- Duplicate bibliography entries
-- Missing titles
-- Citation usage across different sections of the document
-
-## Compatibility Components
-
-Optional typesetting components can be managed from:
-
-**Settings → Typesetting Components**
-
-Users can:
-
-- View available components
-
-- Install components
-
-- Check for updates
-
-- Verify installed components
-
-- Use installed components offline
-
-AcaTex does not install a complete multi-gigabyte TeX distribution by default.
-
-The goal is to provide the common academic writing environment out of the box while downloading uncommon compatibility resources only when they are actually needed.
-
-## Fixes and Improvements
-
-This release also includes:
-
-- Fixed Compatibility Pack downloads from GitHub Releases
-
-- Improved package registry and cache handling
-
-- Improved GitHub Release asset handling
-
-- Improved template dependency detection
-
-- Improved XeTeX conditional dependency analysis
-
-- Improved legacy graphics compatibility
-
-- Improved Figure caption placement
-
-- Improved compiler warning presentation
-
-- Improved Citation appearance in Document Map
-
-- Improved template import diagnostics
-
-- Various UI, stability, and typesetting fixes
-
-## Download
-
-AcaTex v0.4.0 currently supports:
-
-**macOS · Apple Silicon**
-
-Download the `.dmg` attached to this release.
-
-1. Open the downloaded `.dmg`
-
-2. Drag AcaTex into `Applications`
-
-3. Launch AcaTex
-
-The macOS build is signed and notarized for external distribution.
-
-AcaTex remains in Public Preview. Bug reports, unusual LaTeX templates, and feature suggestions are welcome.
+Optional typesetting components can be managed from **Settings → Typesetting Components**, including installation, updates, and verification. AcaTeX aims to avoid requiring a complete multi-gigabyte TeX distribution for common writing tasks.
 
 ---
 
-# Feedback
+## 📥 Download & Install
 
-Found a bug?
+| Platform | Release | Package |
+|---|---|---|
+| **macOS — Apple Silicon** | [v0.5.0 macOS](https://github.com/DarcyLuai/AcaTeX/releases/tag/v0.5.0mac) | Download the `.dmg` asset |
+| **Windows — x64** | [v0.5.0 Windows](https://github.com/DarcyLuai/AcaTeX/releases/tag/v0.5.0win) | Download the Windows installer asset |
 
-Have a strange `.tex` file?
+**macOS:** Open the `.dmg`, drag AcaTeX into **Applications**, then launch it.
 
-Want AcaTex to support a particular academic workflow?
+**Windows:** Download the installer from the Windows Release, run it, and launch AcaTeX.
 
-Have an idea that would make academic writing less painful?
+See the [full documentation](https://acatex.cn/help) for setup instructions and troubleshooting. AcaTeX remains a **Public Preview**; complex templates, custom macros, and unusual `.cls`/`.sty` dependencies may still require compatibility fixes.
 
-**Open an Issue.**
+## 🏠 Local-first
 
-Bug reports, compatibility reports, and feature suggestions are welcome.
+Core writing, saving, compilation, citations, figures, tables, and PDF workflows are designed to run locally. Optional online services and manually exported AI requests are separate from that core workflow.
 
----
+## 🐛 Feedback
 
-# Source Code
+Found a bug, an unusual `.tex` file, or a missing academic workflow? [Open an Issue](https://github.com/DarcyLuai/AcaTeX/issues). Please include your operating system, AcaTeX version, steps to reproduce, and relevant error messages.
 
-This repository currently hosts:
+## Source Code
 
-- AcaTex releases
-- Documentation
-- Issue tracking
-- Feature requests
-- Community feedback
+This repository currently hosts releases, documentation, issue tracking, feature requests, and community feedback. The AcaTeX desktop application's core source code is currently **proprietary and is not included in this repository**.
 
-The AcaTex desktop application's core source code is currently **proprietary and is not included in this repository**.
-
----
-
-# The Idea Behind AcaTex
+## The Idea Behind AcaTeX
 
 LaTeX solved an important problem:
 
 > **Authors should describe the structure of a document instead of manually typesetting every page.**
 
-AcaTex asks one more question:
+AcaTeX asks one more question:
 
 > **What if authors didn't have to describe that structure in code?**
-
-That's the experiment.
 
 **Write visually. Typeset with LaTeX.**
 
@@ -310,343 +179,119 @@ That's the experiment.
 
 # 中文介绍
 
-## 👀 什么是 AcaTex？
+## 👀 什么是 AcaTeX？
 
-AcaTex 是一个**由 LaTeX 驱动的可视化、结构化学术写作环境**。
+AcaTeX 是一款**由 LaTeX 驱动的可视化、结构化学术写作环境**，支持中文与英文写作。
 
-它不会要求你直接面对 LaTeX 源代码，也不只是把论文当作一段段普通文字。AcaTex 让你直接操作学术文档真正的结构和内容。
-
-你可以像使用现代文字处理软件一样写论文，同时由 AcaTex 理解和管理：
-
-- 章节与文档结构
-- 公式与公式编号
-- 文献引用与参考文献
-- 交叉引用
-- 脚注
-- 图片
-- 表格
-- 结构化排版
-- 标签与引用关系
-
-AcaTex 会在后台处理对应的 **LaTeX 文档结构、编译、参考文献处理、交叉引用以及 PDF 生成**。
-
-从 v0.4 开始，AcaTex 还支持 **Zotero 文献库和 Word 文档工作流**，让现有的学术写作流程能够更方便地与 LaTeX 排版结合。
-
-你不需要从这些代码开始：
-
-```latex
-\section{}
-\begin{equation}
-\begin{figure}
-\cite{}
-\label{}
-\ref{}
-```
+你可以像使用现代文字处理软件一样撰写论文，同时由 AcaTeX 管理章节、公式、文献引用、交叉引用、脚注、图片、表格及 PDF 编译。你无需从 `\section{}`、`\begin{equation}` 或 `\cite{}` 等命令开始。
 
 **直接写就好。**
 
----
+## 为什么是 AcaTeX？
 
-## 为什么是 AcaTex？
+LaTeX 擅长排版，但直接编辑 LaTeX 源代码未必是最自然的写作方式。AcaTeX 让你直接操作文档对象：
 
-LaTeX 非常擅长排版。
+- 图片是一张可以设置标题和标签的**图片**。
+- 引用是与文献条目关联的**引用**。
+- 公式是可以编号、编辑和交叉引用的**公式**。
+- 章节是论文整体结构中的**章节**。
 
-但直接编写 LaTeX 源代码，并不一定是最自然的写作方式。
+> **你决定文档表达什么，AcaTeX 负责将这些结构转换为 LaTeX。**
 
-一篇普通的学术论文可能包含：
-
-```latex
-\section{Theory}
-
-Previous research suggests that...
-
-\begin{equation}
-P(D)=(1-p)[q_N+(q_L-q_N)\pi_L]
-\end{equation}
-
-As argued by \textcite{fearon1995}...
-```
-
-而在 AcaTex 中，你可以直接操作这些代码真正**代表的内容**：
-
-```text
-Theory
-
-Previous research suggests that...
-
-Equation 1
-
-Fearon (1995)
-```
-
-例如：
-
-```math
-P(D)=(1-p)\left[q_N+(q_L-q_N)\pi_L\right]
-```
-
-可以直接以可视化方式插入和编辑，而最终的数学排版仍然由 LaTeX 完成。
-
-同样的逻辑贯穿整个文档：
-
-- 图片不只是一段 LaTeX 代码——它是一张**图片**。
-- 文献引用不只是一个 `\cite{}` 命令——它是对一篇**文献的引用**。
-- 公式不只是一个 environment——它是一个**可以编号和交叉引用的公式**。
-- 章节不只是 `\section{}`——它是**论文整体结构的一部分**。
-
-因为 AcaTex 能够理解这些内容之间的关系，当你移动、插入或重新组织内容时，相关的编号、引用和文档结构也可以自动更新。
-
-> **你决定文档表达什么，AcaTex 负责将这些结构转换为 LaTeX。**
+AcaTeX 并不试图取代 LaTeX，而是提供一种更加直观的使用方式，同时保留其专业排版与可移植性。
 
 ---
 
-AcaTex 并不是为了取代 LaTeX。
+## ✨ v0.5.0 主要更新
 
-它希望提供一种更加可视化、结构化的方式来**使用 LaTeX**，同时保留 LaTeX 在学术写作中重要的排版质量、可移植性与灵活性。
+### 🪟 Windows 与 macOS 双平台
 
----
-> ### 🎨 图标更新
+AcaTeX v0.5.0 现提供 **macOS（Apple Silicon）** 与 **Windows（x64）** 版本。两个平台分别发布独立的 GitHub Release，可根据系统选择对应安装包。
 
->
+### 🤖 AcaTeX AI Protocol
 
-> AcaTex 更新了应用图标，以形成更加独立的视觉风格，并避免与 Typora 的图标产生相似。
+AcaTeX 提供模型无关的 AI 文档修改工作流，可配合 ChatGPT、Claude、DeepSeek 等兼容模型使用：
 
->
+1. 在 AcaTeX 中选择 **准备 AI 副本**。
+2. 将生成的请求包交给你使用的 AI。
+3. 将 AI 返回的结构化补丁通过 **导入 AI 修改** 带回 AcaTeX。
+4. 检查修改内容，确认后**另存为新副本**。
 
-> 感谢大家此前的提醒和反馈！
+该流程使用稳定对象 ID 和校验机制保护文档。AcaTeX 不要求配置 AI API Key，不自动上传论文，也不会静默覆盖原稿。
 
----
+### 📄 写作与 PDF 联动
 
-## ✨ 本次更新
+集成 LaTeX 编译、PDF 预览及受支持内容的写作—PDF 导航，让编辑与查看排版结果更加方便。
 
-### 1. 🔗 交叉引用
+### 📚 学术研究标记
 
-新增 **图片、表格、公式和章节的交叉引用**。
+支持四类 Research Marks：
 
-调整、插入或移动内容后，编号与引用关系会自动更新，不再需要手动修改。
+- **RQ**：研究问题
+- **Claim**：核心论点
+- **Hypothesis**：研究假设
+- **Finding**：研究发现
 
----
+### 🧩 结构化文档与交叉引用
 
-### 2. ∑ 公式编辑优化
+原生 `.texflow` 格式保留可视化结构及 AcaTeX 专用元数据。通过结构侧栏管理章节，并为公式、图片、表格和章节建立交叉引用。
 
-重新优化公式编辑体验：
+### ∑ 公式、文献、图片与表格
 
-- 默认支持 **行内公式**
+- 行内公式、独立公式与常见数学环境
+- 多文献引用与参考文献管理
+- 本地 Zotero 文献库搜索及相关检索工作流
+- 图片、标题、标签与 TIFF/TIF 格式支持
+- 可视化表格与 Smart Table Import & Fit
+- Word 与 LaTeX 导入、导出工作流
+- Document Check 文档检查
 
-- 可自由切换 **行内公式 / 独立公式**
+### ⚡ 性能优化
 
-- 支持 **公式编号**
+v0.5.0 优化了包含大量公式和引用的复杂文档输入性能。内部测试中，240 个引用与 240 个公式的文档：
 
-- 优化长公式的自动排版
+- **关闭 PDF 预览**：输入延迟中位数从 66.1 ms 降至 24.3 ms。
+- **开启 PDF 预览**：输入延迟中位数从 75.8 ms 降至 24.0 ms。
 
----
+以上为内部测试数据，实际表现因设备和文档而异。
 
-### 3. 📚 文献引用优化
+### ⚙️ 排版兼容组件
 
-进一步完善文献引用工作流：
-
-- 支持一次引用 **多篇文献**
-
-- 统一管理同一篇文献在全文中的使用
-
-- 改善不同引用格式的兼容性
-
----
-
-### 4. 🔍 Zotero 本地文献库
-
-v0.4 支持直接搜索 **本地 Zotero 文献库**，同时继续保留在线文献搜索。
-
-找到文献后可以直接用于引用，不再需要手动查找和复制 BibTeX。
+可通过 **设置 → 排版组件** 查看、安装、更新和验证可选排版组件，以支持更多复杂模板与依赖。
 
 ---
 
-### 5. ✓ Document Check
+## 📥 下载与安装
 
-新增 **Document Check**，用于快速检查文档中的常见问题，包括：
+| 平台 | 下载地址 | 安装方式 |
+|---|---|---|
+| **macOS · Apple Silicon** | [下载 v0.5.0 macOS 版](https://github.com/DarcyLuai/AcaTeX/releases/tag/v0.5.0mac) | 下载 `.dmg`，拖入“应用程序” |
+| **Windows · x64** | [下载 v0.5.0 Windows 版](https://github.com/DarcyLuai/AcaTeX/releases/tag/v0.5.0win) | 下载 Windows 安装程序并运行 |
 
-- 失效或未解析的交叉引用
+完整操作说明：[acatex.cn/help](https://acatex.cn/help)
 
-- 重复文献
+AcaTeX 目前仍处于 **Public Preview** 阶段。复杂 LaTeX 宏包、自定义命令、特殊 `.cls/.sty` 文件及部分边缘场景仍可能存在兼容性问题。
 
-- 缺少标题
+## 🏠 本地优先
 
-- 文献在不同章节中的引用与使用情况
+AcaTeX 的核心写作、保存、编译、文献引用、图片、表格和 PDF 工作流以本地运行为主。在线检索等可选服务，以及由用户主动导出的 AI 请求，与核心离线写作流程相互独立。
 
-方便在投稿、提交论文或导出最终版本前快速检查整个文档。
+## 🐛 问题反馈
 
----
-
-### 6. 🧩 重构文档结构
-
-v0.4 对 AcaTex 的文档结构进行了较大重构。
-
-AcaTex 不再只是将内容视为普通文字，而是能够识别 **章节、公式、图片、表格、文献及其相互关系**。
-
-新的结构化文档模型也为以下功能提供了基础：
-
-- Cross-reference
-
-- Document Check
-
-- 文档导入与转换
-
-- 自动编号与引用更新
-
-- 后续更多结构化学术写作功能
-
----
-
-### 7. 🖼️ TIFF / TIF 图片支持
-
-图片导入新增 **TIFF / TIF** 格式支持。
-
-科研绘图、统计软件以及其他学术工作流生成的 TIFF 图片现在可以直接插入 AcaTex。
-
----
-
-### 8. 📊 智能表格导入与排版
-
-新增 **Smart Table Import & Fit**。
-
-支持导入 Word 中的复杂表格，例如论文中常见的 **Table 1**。
-
-AcaTex 会自动：
-
-- 识别表格结构
-
-- 调整字号
-
-- 调整列宽
-
-- 根据页面空间重新排版
-
-并尽量将表格 **完整、美观地排入纵向 A4 页面**。
-
----
-
-### 9. ⚙️ 进一步完善兼容性
-
-继续改善以下工作流之间的兼容性：
-
-- Zotero
-
-- 不同文献引用格式
-
-- 复杂 LaTeX 模板
-
-- 现有学术写作工作流
-
----
-
-### 10. 📄 Word 导入 / 导出
-
-新增 **Word 文档导入与导出**。
-
-现在可以在 **Word 与 AcaTex 之间转换文档**，让不熟悉 LaTeX 的用户也能使用结构化学术写作和 LaTeX 排版。
-
-同时，也可以更方便地与仍然使用 Word 的 **导师、合作者和期刊工作流**衔接。
-
----
-
-<p align="center">
-
-  <strong>Write visually. Typeset with LaTeX.</strong>
-
-</p>
-
-AcaTex v0.4 继续朝着一个简单的目标前进：
-
-> **让用户不需要手动处理复杂的 LaTeX，也能完成结构化、规范且适合学术出版的文档写作。**
-
-## 下载
-
-AcaTex v0.3.0 当前支持：
-
-**macOS · Apple Silicon**
-
-请下载本 Release 中的 `.dmg`。
-
-1. 打开下载的 `.dmg`
-
-2. 将 AcaTex 拖入 `Applications`
-
-3. 启动 AcaTex
-
-macOS 版本已经完成签名与 Apple Notarization。
-
-AcaTex 目前仍处于 Public Preview 阶段。
-
-如果你遇到 Bug、特殊 LaTeX 模板兼容问题，或者有新的功能建议，欢迎通过 GitHub Issues 反馈。
-
-
-## 本地优先
-
-AcaTex 的核心写作流程可以在本地完成：
-
-- 写作
-- 保存
-- 自动保存
-- LaTeX 编译
-- Citation
-- 参考文献
-- PDF
-- 图片
-- 表格
-- 文档结构
-
-你的论文不应该因为没有网络而无法继续写。
-
----
-
-## 下载
-
-当前版本：
-
-**AcaTex v0.4**
-
-支持：
-
-**macOS · Apple Silicon**
-
-请前往本仓库的 **Releases** 下载最新 `.dmg`。
-
----
-
-## 当前状态
-
-AcaTex 仍然处于 **Public Preview**。
-
-复杂的 LaTeX 宏包、自定义命令、特殊 `.cls/.sty` 文件以及部分边缘场景仍可能存在兼容性问题。
-
-如果遇到 Bug，欢迎提交 Issue。
-
----
+如遇 Bug、特殊模板兼容问题或有功能建议，欢迎通过 [GitHub Issues](https://github.com/DarcyLuai/AcaTeX/issues) 反馈。建议提供系统版本、AcaTeX 版本、复现步骤及相关错误信息。
 
 ## 关于源代码
 
-本仓库目前用于：
+本仓库目前用于版本发布、文档、Issue 追踪、功能建议与用户反馈。AcaTeX 桌面应用的核心源代码目前**尚未公开**。
 
-- AcaTex 版本发布
-- 文档
-- Issue 追踪
-- 功能建议
-- 用户反馈
-
-AcaTex 桌面应用核心代码目前暂未公开。
-
----
-
-## AcaTex 的想法
+## AcaTeX 的想法
 
 LaTeX 的一个重要思想是：
 
 > **作者应该描述文档的结构，而不是手工调整每一页的排版。**
 
-AcaTex 想再往前一步：
+AcaTeX 想再往前一步：
 
 > **如果作者连描述这些结构的代码都不需要写呢？**
 
-这就是 AcaTex 正在尝试的事情。
-
-**可视化写作，使用 LaTeX 排版。**
+<p align="center"><strong>Write visually. Typeset with LaTeX.</strong></p>
