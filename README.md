@@ -8,7 +8,7 @@
 
 <p align="center">A visual, structured academic writing environment powered by LaTeX.</p>
 
-<p align="center"><strong>Public Preview · v0.5.0 · macOS (Apple Silicon) & Windows (x64)</strong></p>
+<p align="center"><strong>Public Preview · v0.5.5 · macOS (Apple Silicon) & Windows (x64)</strong></p>
 
 <p align="center">Supports English and Chinese academic writing.</p>
 
@@ -18,10 +18,10 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/DarcyLuai/AcaTeX/releases/tag/v0.5.0mac">
+  <a href="https://github.com/DarcyLuai/AcaTeX/releases/tag/v0.5.5mac">
     <img src="https://img.shields.io/badge/Download-macOS%20(Apple%20Silicon)-blue?style=for-the-badge&logo=apple" alt="Download AcaTeX for macOS">
   </a>
-  <a href="https://github.com/DarcyLuai/AcaTeX/releases/tag/v0.5.0win">
+  <a href="https://github.com/DarcyLuai/AcaTeX/releases/tag/v0.5.5win">
     <img src="https://img.shields.io/badge/Download-Windows%20(x64)-blue?style=for-the-badge&logo=windows" alt="Download AcaTeX for Windows">
   </a>
 </p>
